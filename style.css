@@ -5,6 +5,7 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: roboto, sans-serif;
 }
 
 main{
@@ -13,19 +14,77 @@ main{
 }
 
 .left_container{
+    position: relative;
+    height: 100vh;
     width: 17.5%;
-    padding: 10px;
+    padding: 15px;
+    
 }
 
-.left_container>.small_aj{
+.left_side1{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.left_side1 .info{
+    padding-left: 10px;
+}
+
+.left_side1 span{
+    font-size: 12px;
+
+}
+
+.left_side1 .small_aj{
+    padding: 10px;
     display: flex;
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: purple;
+    background-color: blueviolet;
     color: #fff;
     justify-content: center;
     align-items: center;
+}
+
+.left_side2{
+    margin-top: 15px;
+
+}
+
+.left_side2 input{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-bottom: 2px solid rgb(177, 177, 177);
+    background-color: #ebe8e8;
+}
+
+.left_side3{
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.left_side3 hr.solid{
+    border: 1px solid #bbb;
+}
+
+.left_side3 .task_list{
+    background-color: #ebe8e8;
+}
+.left_side3 div{
+    padding: 15px;
+}
+
+.left_side4{
+    color: blueviolet ;
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    font-size: 13px;
+
 }
 
 
