@@ -5,7 +5,7 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: roboto, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans' ;
 }
 
 main{
@@ -13,6 +13,8 @@ main{
     flex-direction: row;
 }
 
+
+/* for the left session  */
 .left_container{
     position: relative;
     height: 100vh;
@@ -84,17 +86,88 @@ main{
     position: absolute;
     bottom: 0;
     font-size: 13px;
+    margin-bottom: 10px;
 
 }
 
-
+/* for the middle session */
 .main_container{
+    position: relative;
     width: 65%;
-    padding: 10px;
+    padding: 15px;
     background-color: #b0a2f2;
 }
+
+.main_side1{
+    color: #fff;
+    font-size: 20px;
+
+}
+
+.main_side2{
+    display:flex ;
+    flex-direction: row;
+}
+
+.main_side2 .todo{
+    color: blueviolet;
+    text-align: center;
+    padding: 12px 12px;
+    width: 20%;
+    border-bottom: 1px solid blueviolet;
+}
+
+.main_side2 .completed{
+    color: #6e6e85;
+    text-align: center;
+    padding: 12px 12px;
+    width: 20%;
+    border-bottom: 1px solid #fff;
+}
+
+.main_side3 .tasks{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 6px;
+    background-color: #fff;
+
+}
+
+.main_side3 .taskmain{
+    background-color:#cfcdcd ;
+}
+
+
+
+
+
+.main_side3 input{
+    background-color:transparent;
+    margin-right: 20px;
+    
+}
+
+
+.main_side4{
+    border-radius: 20px;
+    background-color: #6e6e85 ;
+    color: #ffffff ;
+    padding: 10px;
+    position: absolute;
+    width:96% ;
+    bottom: 0;
+    font-size: 13px;
+    margin-bottom: 10px;
+
+}
+
+
 
 .right_container{
     width: 17.5%;
     padding: 10px;
 }
+
+
