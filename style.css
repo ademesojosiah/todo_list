@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+.left_container{
+    width: 17.5%;
+    padding: 10px;
+}
+
+.left_container>.small_aj{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: purple;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main_container{
+    width: 65%;
+    padding: 10px;
+    background-color: #b0a2f2;
+}
+
+.right_container{
+    width: 17.5%;
+    padding: 10px;
+}
