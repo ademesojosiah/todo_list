@@ -150,7 +150,7 @@ main{
     display: flex;
     justify-content: space-between;
     border-radius: 10px;
-    padding: 15px;
+    padding: 10px;
     margin-top: 6px;
     background-color: #fff;
 
@@ -172,10 +172,12 @@ main{
 
 
 .main_side4{
+    display: flex;
+    align-items: center;
     border-radius: 20px;
     background-color: #6e6e85 ;
     color: #ffffff ;
-    padding: 13px;
+    padding-left: 13px;
     position: absolute;
     width:96% ;
     bottom: 0;
@@ -185,12 +187,26 @@ main{
 
 }
 
+.main_side4 .plus{
+    cursor: pointer;
+    padding: 4px;
+    font-size: 20px;
+}
 
-.main_side4::placeholder{
+.main_side4 input{
+    width: 60%;
+    background-color: #6e6e85 ;
+    color: #ffffff ;
+    padding: 13px;
+    border: none;
+}
+
+
+.main_side4 input::placeholder{
     color: #fff;
 }
 
-.main_side4:focus{
+.main_side4 input:focus{
     outline: none;
 }
 
