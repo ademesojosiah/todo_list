@@ -5,9 +5,10 @@ deletebtn();
 
 plus.addEventListener('click',()=>{
     let newTask = document.createElement("div")
-    newTask.innerHTML = ` <div class="tasks">
+    newTask.classList.add("tasks")
+    newTask.innerHTML = `
     <span><input type="checkbox" name="Task3" id="">${document.querySelector('#new_item').value}</span>
-    <img class="bin" src="/icons/bin.png" alt=""></div>`;
+    <img class="bin" src="/icons/bin.png" alt="">`;
     dad.append(newTask);
     document.querySelector('#new_item').value = ""  ;
     
