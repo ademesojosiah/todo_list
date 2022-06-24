@@ -156,7 +156,8 @@ main{
 
 }
 
-.main_side3 .taskmain{
+
+.main_side3 .tasks:hover{
     background-color:#cfcdcd ;
 }
 

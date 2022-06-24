@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>  
     <title>Todo list</title>
 </head>
 <body>
@@ -41,10 +41,9 @@
                 <div class="completed">Completed</div>
             </div>
             <div class="main_side3">
-                <div class="tasks taskmain"><span><input type="checkbox" name="Task1" id="">Task1</span><img src="/icons/bin.png" alt=""></div>
-                <div class="tasks"><span><input type="checkbox" name="Task2" id="">Task2</span><img src="/icons/bin.png" alt=""></div>
-                <div class="tasks"><span><input type="checkbox" name="Task3" id="">Task3</span><img src="/icons/bin.png" alt=""></div>
-                <div class="tasks"><span><input type="checkbox" name="Task4" id="">Task4</span><img src="/icons/bin.png" alt=""></div>
+                <div class="tasks"><span><input type="checkbox" name="Task1" id="">Task1</span><img class="bin" src="/icons/bin.png" alt=""></div>
+                <div class="tasks"><span><input type="checkbox" name="Task2" id="">Task2</span><img class="bin" src="/icons/bin.png" alt=""></div>
+                <div class="tasks"><span><input type="checkbox" name="Task3" id="">Task3</span><img class="bin" src="/icons/bin.png" alt=""></div>
                 
             </div>
 
@@ -55,7 +54,7 @@
         </section>
         <section class="right_container">
             <div class="right_side1">
-                <span><input type="checkbox" name="Task1" id=""><p>Task1</p></span><span><img src="/icons/star_rate.png" alt=""></span>
+                <span><input type="checkbox" name="Task1" id=""><p>Task1</p></span><span><img  src="/icons/star_rate.png" alt=""></span>
             </div>
             <div class="right_side2">
                 <span><img src="/icons/Leading.png" alt=""><p> Due sunday,10 April</p></span><span>x</span>
@@ -70,6 +69,6 @@
             </div>
         </section>
     </main>
-    
+  
 </body>
 </html>
