@@ -130,7 +130,9 @@ main{
     flex-direction: row;
 }
 
+
 .main_side2 .todo{
+    cursor: pointer;
     color: blueviolet;
     text-align: center;
     padding: 12px 12px;
@@ -138,12 +140,28 @@ main{
     border-bottom: 1px solid blueviolet;
 }
 
-.main_side2 .completed{
+.main_side2 .todo:hover{
+    color: #fff;
+    font-weight: bold;
+}
+
+.main_side2 .completed{   
+    cursor: pointer;
     color: #6e6e85;
     text-align: center;
     padding: 12px 12px;
     width: 20%;
     border-bottom: 1px solid #fff;
+}
+
+.main_side3{
+    display: block;
+
+}
+.main_side2 .completed:hover{
+    color: #fff;
+    font-weight: bold;
+
 }
 
 .main_side3 .tasks{
@@ -163,13 +181,41 @@ main{
 
 
 
-
-
 .main_side3 input{
     background-color:transparent;
     margin-right: 20px;
     
 }
+
+
+
+.completed_task{
+    display: none;
+}
+.completed_task input{
+    background-color:transparent;
+    margin-right: 20px;
+    
+}
+.completed_task .tasks{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 6px;
+    background-color: #fff;
+
+}
+
+
+.completed_task .tasks:hover{
+    background-color:#cfcdcd ;
+}
+
+
+
+
+
 
 
 .main_side4{
