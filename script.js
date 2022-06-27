@@ -27,7 +27,7 @@ plus.addEventListener('click',()=>{
 
 
 
-
+moveToCompleted();
 deletebtn();
 
 
@@ -61,6 +61,7 @@ for(let bin of bins){
 }
 
 function moveToCompleted(){
+const checkings = document.querySelectorAll("#checkbox");
 for(let i = 0; i<checkings.length; i++){  //looping through the checkings array
     checkings[i].addEventListener("click",()=>{    //add evenlistener to each of them
         if(checkings[i].checked == true){  // check if each of the them are checked 
