@@ -6,36 +6,8 @@ const comBtn = document.querySelector(".completed");
 const toDo = document.querySelector(".todo");
 const TestInput = document.querySelector(".main_side4");
 
-
-function deletebtn(){
-let bins = document.querySelectorAll(".bin");
-for(let bin of bins){
-    bin.addEventListener("click",()=>{
-        bin.parentNode.remove();
-    });
-
-    }
-}
-
-function moveToCompleted(){
-let checkings = document.querySelectorAll("#checkbox");
-for(let checking of checkings){  //looping through the checkings array
-    checking.addEventListener("click",()=>{    //add evenlistener to each of them
-        // if(checking.checked === true){  // check if each of the them are checked 
-            const checkers = document.createElement("div");
-            checkers.classList.add("tasks");
-            checkers.innerHTML = `
-            <span>${checking.value}</span>
-            <img class="bin" src="/icons/bin.png" alt="">`;
-            comDad.append(checkers);
-
-            deletebtn();
-    // }
-});
-    
-}
-};
-
+deletebtn();
+moveToCompleted();
 
  
 toDo.addEventListener('click',()=>{
@@ -54,18 +26,52 @@ comBtn.addEventListener('click',()=>{
 })
 
 
+function deletebtn(){     ///fnction to delete task
+let bins = document.querySelectorAll(".bin");
+for(let bin of bins){
+    bin.addEventListener("click",()=>{
+        bin.parentNode.remove();
+    });
 
-    plus.addEventListener('click',()=>{
-    let newTask = document.createElement("div")
-    newTask.classList.add("tasks")
-    let val = newItem.value
-    newTask.innerHTML = `
+    }
+}
+
+function moveToCompleted(){     ///functions to move tasks to completed tab
+let checkings = document.querySelectorAll("#checkbox");  ///get all checkbox in the list of tasks
+
+for(let i = 0; i <checkings.length;i++){        //loop through the list of checkboxes 
+        checkings[i].addEventListener("click",()=>{    /// add an eventlistner to each checkbox
+        if(checkings[i].checked){        /// if checkbox is checked do that
+
+            // then this adds the new divs to the parent element(dad) innerhtml
+            comDad.innerHTML += `
+                <div class="tasks">
+                    <span>${checkings[i].value}</span>
+                    <img class="bin" src="/icons/bin.png" alt="">
+                </div>`;
+            deletebtn(); ///this deletes tasks in the completed tasks tab
+        
+    }
+});
+}
+};
+
+
+
+
+
+plus.addEventListener('click',()=>{
+let val = newItem.value; /// gets the value of your input
+
+// then this adds the new divs to the parent element(dad) innerhtml
+dad.innerHTML += `           
+<div class="tasks">
     <span><input type="checkbox" name="Task3" id="checkbox" value="${val}">${val}</span>
-    <img class="bin" src="/icons/bin.png" alt="">`;
-    dad.append(newTask);
-    document.querySelector('#new_item').value = ""  ;
+    <img class="bin" src="/icons/bin.png" alt="">
+</div>`;
 
-    moveToCompleted();
-    deletebtn();
+document.querySelector('#new_item').value = ""  ; ///lets the input be empty
+deletebtn();
+moveToCompleted();
    
 })
